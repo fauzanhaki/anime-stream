@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="adminpage.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav id="navigation" class="navbar navbar-expand-lg navbar-dark fixed-top mb-2">
+        <div class="container-fluid">
+            <ul class="navbar-nav mb-2">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Window.tv</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="home.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="home.html">Home</a></li>
+                        <li><a class="dropdown-item" href="#">Recent</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#trending">Trending</a></li>
+                        <li><a class="dropdown-item" href="#newreleases">New Realeses</a></li>
+                        <li><a class="dropdown-item" href="#sugestion">Sugestion</a></li>
+                    </ul>
+                </li>
+                <!-- dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Genre
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Adventure</a></li>
+                        <li><a class="dropdown-item" href="#">Isekai</a></li>
+                        <li><a class="dropdown-item" href="#">Romance</a></li>
+                        <li><a class="dropdown-item" href="#">Comedy</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Movie</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+
+            <div class="search-center">
+                <form autocomplete="off" action="/action_page.php">
+                    <div class="autocomplete" style="width:300px;">
+                        <input id="myInput" class="form-control me-2" type="text" name="myCountry" placeholder="Search">
+                    </div>
+
+                    <input type="submit" hidden>
+                </form>
+            </div>
+
+            <button class="btn btn-outline-custom-light" type="submit"><a type="submit"><a
+                        class="text-decoration-none text-light" href="loginpg.html">SIGN IN</a>
+            </button>
+            <button class="btn btn-outline-custom-light" type="submit"><a class="text-decoration-none text-light"
+                    href="regpg.html">CREATE
+                    ACCOUNT</a> </button>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- adminpage -->
+    <section id="adminpg" class="sec1 text-center" style="color: #fff;">
+        <div class="overlay">
+            <div class="logbox">
+                <h2>File Upload</h2>
+                <form>
+                    <p>File Name</p>
+                    <input type="text" name="" placeholder="Enter File Name">
+                    <p>Description</p>
+                    <input type="text" name="" placeholder="Enter Description">
+                    <p>Rating</p>
+                    <input type="text" name="" placeholder="Enter Rating">
+                    <p>File Path</p>
+                    <input type="text" name="" placeholder="Enter Path">
+                    <p>Cover Landscape</p>
+                    <input type="text" name="" placeholder="Enter Cover">
+                    <p>Cover Portrait</p>
+                    <input type="text" name="" placeholder="Enter Cover">
+                    <input type="submit" name="" value="Upload File"><a href="loginpg.html"></a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/search.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

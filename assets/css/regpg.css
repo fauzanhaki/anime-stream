@@ -1,0 +1,221 @@
+@import "https://unpkg.com/open-props";
+
+/* horizobtal scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 1 0 5px grey;
+    border-radius: 30px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(63, 63, 70);
+    border-radius: 5px;
+}
+
+
+/* navbar search position */
+.search-center {
+    margin: auto;
+}
+.sec1 {
+    /* color: fff; */
+    background-image: url('../img/bgg.jpg');
+    background-size: cover;
+    width: auto;
+    height: 800px;
+    opacity: 0.9;
+
+}
+
+.overlay {
+    background: rgba(33, 34, 36, 0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 1;
+}
+
+.btn-outline-custom-sign-up {
+    background-color: #C600FF;
+    color: #fff;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+
+.btn-outline-custom-light {
+    background-color: transparent;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.btn-outline-custom-sign-up :hover {
+    background-color: #C600FF;
+    color: #fff;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+.textkecil{
+    font-size: 8pt;
+}
+.btn-outline-custom-light:hover {
+    background-color: transparent;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(bg.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.logbox{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 600px;
+    padding: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+}
+
+h2{
+    margin: 0;
+    padding: 10px 0 20px;
+    color: #efed40;
+    text-align: center;
+}
+
+.logbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logbox input[type="text"],
+.logbox input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+::placeholder{
+    color: rgba(255,255,255,.5);
+}
+
+.logbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #C600FF;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.logbox input[type="submit"]:hover{
+    background: transparent;
+    color: #fff;
+}
+
+.logbox a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+/* SEARCH */
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  /*the container must be positioned relative:*/
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+  }
+  
+  input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  
+  input[type=submit ] {
+    background-color: dodgerblue;
+    color: fff;
+    cursor: pointer;
+    
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }

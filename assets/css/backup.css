@@ -1,0 +1,255 @@
+@import "https://unpkg.com/open-props";
+
+/* horizobtal scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 1 0 5px grey;
+    border-radius: 30px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(63, 63, 70);
+    border-radius: 5px;
+}
+
+/* HOME */
+.sec1 {
+    background-image: url('../img/bgg.jpg');
+    background-size: cover;
+    width: auto;
+    height: 800px;
+    opacity: 0.9;
+
+}
+
+.overlay{
+    background: rgba(33, 34, 36, 0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 1;
+}
+
+/* navbar search position */
+.search-center {
+    margin: auto;
+}
+
+.btn-outline-custom-sign-up {
+    background-color: #C600FF;
+    color: #fff;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.btn-outline-custom-light {
+    background-color: transparent;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+/* .btn-outline-custom-sign-up :hover {
+    background-color: #747175;
+} */
+
+/* btn-sign in */
+.btn-outline-custom-light:hover {
+    background-color: transparent;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* horizontal scroll */
+.media-scroller {
+    --_spacer: var(--size-3);
+    display: grid;
+    gap: var(--_spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 21%;
+
+    padding: 0 var(--_spacer) var(--_spacer);
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.media-scroller--with-groups {
+    grid-auto-columns: 80%;
+}
+
+.media-group {
+    display: grid;
+    gap: var(--_spacer);
+    grid-auto-flow: column;
+}
+
+.media-element {
+    color: #ffffff;
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--_spacer);
+    padding: var(--_spacer);
+    background: #343a40;
+    border-radius: var(--radius-2);
+    box-shadow: var(--shadow-2);
+}
+
+.media-element>img {
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    
+    object-fit: cover;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+.snaps-inline>* {
+    scroll-snap-align: start;
+}
+
+/* general styling */
+
+.container {
+    inline-size: min(100% - 4rem, 70rem);
+    margin-inline: auto;
+}
+
+.flow {
+    display: grid;
+    gap: var(--size-3);
+}
+
+.page-header {
+    padding-block: var(--size-9);
+    margin-block-end: var(--size-9);
+    background: var(--gradient-16);
+    color: var(--gray-0);
+    box-shadow: var(--shadow-2);
+}
+
+.page-title {
+    font-size: var(--font-size-fluid-3);
+}
+
+.page-subtitle {
+    font-size: var(--font-size-fluid-1);
+}
+
+.section-title {
+    padding-inline-start: var(--size-6);
+    margin-block: var(--size-9) var(--size-3);
+}
+
+.rating {
+    display: inline-flexbox;
+}
+
+.title-list {
+    z-index: 2;
+}
+
+.carousel-item img {
+    object-fit: scale-down;
+    object-position: 15% 100%;
+    width: 82.5vw;
+    height: 90vh;
+}
+
+.drk::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+/* title */
+.title {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.title p {
+    margin-bottom: 0;
+}
+
+/* SEARCH */
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  /*the container must be positioned relative:*/
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+  }
+  
+  input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  
+  input[type=submit ] {
+    background-color: dodgerblue;
+    color: fff;
+    cursor: pointer;
+    
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }

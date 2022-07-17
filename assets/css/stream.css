@@ -1,0 +1,185 @@
+@import "https://unpkg.com/open-props";
+
+::-webkit-scrollbar {
+    
+    width: 5px;
+    height: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 1 0 5px grey; 
+    border-radius: 30px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(63, 63, 70); 
+    border-radius: 5px;
+  }
+  
+  /* navbar search position */
+.search-center {
+    margin: auto;
+}
+.sec1 {
+    /* color: fff; */
+    background: #0E0C0C;
+    background-size: contain;
+    width: auto;
+    height: 1800px;
+    opacity: 0.9;
+
+}
+
+.overlay {
+    background: rgba(33, 34, 36, 0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 1;
+}
+
+.btn-outline-custom-sign-up {
+    background-color: #C600FF;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.btn-outline-custom-light {
+    background-color: transparent;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.btn-outline-custom-sign-up :hover {
+    background-color: #C600FF;
+    color: #fff;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.btn-outline-custom-light:hover {
+    background-color: transparent;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+  /*the container must be positioned relative:*/
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+  
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+  
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+}
+  
+  /*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+}
+  
+  /*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+}
+
+.tv{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+.descbox{
+    position: absolute;
+    width: 70%;
+    top: 90%;
+    left: 3%;
+}
+.player{
+    width: 950px;
+    height: 543px;
+}
+
+.play-title{
+    font-size: 30px;
+    text-align: left;
+}
+
+.view{
+    text-align: left;
+}
+
+.poster>img{
+    inline-size: 20%;
+    display: block;
+    margin: none;
+}
+
+.desc{
+    display: block;
+    text-align: left;
+}
+
+.upnext-title{
+    font-size: 20px;
+    text-align: left;
+    
+}
+
+.upnext{
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    background: transparent;
+    width: 302px;
+    height: 1000px;
+}
+
+.watchnext>img {
+    inline-size: 36%;
+    padding: 9px;
+}
+
+.watchnext{
+    background: #343a40;
+    margin-left: 0%;
+    margin-bottom: 10px;
+    width: 302px;
+    height: 154px;
+}
+
+.next-title{
+    font-size: 20px;
+    text-align: left;
+    margin: 0%;
+}
+
+.sea-eps{
+    font-size: 18px;
+}
