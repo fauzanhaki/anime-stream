@@ -1,2 +1,3 @@
-<h1>NPM INSTALL SEK</h1>
-<h1>TERUS NODE APP.JS</h1>
+there is doesn't inclue image
+or cover
+cause that's too many file
